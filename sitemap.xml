@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://rubenmegido.github.io/mi-primer-post/</loc>
+    <loc>http://localhost:44793/mi-primer-a-post/</loc>
     <lastmod>2025-05-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://rubenmegido.github.io/</loc>
+    <loc>http://localhost:44793/</loc>
     <lastmod>2025-05-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://rubenmegido.github.io/post/</loc>
+    <loc>http://localhost:44793/post/</loc>
     <lastmod>2025-05-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://rubenmegido.github.io/categories/</loc>
+    <loc>http://localhost:44793/categories/</loc>
   </url><url>
-    <loc>https://rubenmegido.github.io/tags/</loc>
+    <loc>http://localhost:44793/tags/</loc>
   </url>
 </urlset>
