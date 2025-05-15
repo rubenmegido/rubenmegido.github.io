@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on My New Hugo Site</title>
-    <link>http://localhost:44793/post/</link>
+    <link>http://localhost:38655/post/</link>
     <description>Recent content in Posts on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
     <lastBuildDate>Thu, 15 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:44793/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:38655/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Mi Primer A Post</title>
-      <link>http://localhost:44793/mi-primer-a-post/</link>
+      <title>test</title>
+      <link>http://localhost:38655/test/</link>
       <pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:44793/mi-primer-a-post/</guid>
-      <description>Hola, este es mi primer post con el tema hugo-xmin.</description>
+      <guid>http://localhost:38655/test/</guid>
+      <description>test hugo-xmin.</description>
     </item>
   </channel>
 </rss>
