@@ -33,7 +33,7 @@
       sha_title: 'SHA256 verification (optional)',
       sha_text_1: 'You can verify the integrity of <code>simple.exe</code> in PowerShell with: <code>Get-FileHash .\\SIMPLE.exe -Algorithm SHA256</code>',
       sha_text_2: 'Compare the result with: <code>907FD329F7FA31153A1C3F2CC68E6A29204595333679F565703C6D087C44EAB5</code>',
-      install_step_1: 'Download the <code>simple.exe</code> executable.',
+      install_step_1: 'Download the Windows executable <code>simple.exe</code>.',
       install_step_2: 'Create a folder named SIMPLE, copy it there, and run the file.',
       install_step_3: 'If SmartScreen warns you, click <code>More info</code> and then <code>Run anyway</code>.',
       install_step_4: 'Open a local or web FITS and start working.'
