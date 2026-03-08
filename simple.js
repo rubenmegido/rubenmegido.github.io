@@ -8,8 +8,16 @@
   }
 
   const themeKey = 'simple_docs_theme';
+  const langKey = 'simple_docs_lang';
   const i18n = {
     en: {
+      home_page_title: 'rubenmegido',
+      home_title: 'ruben megido',
+      home_subtitle: 'Physics · Stellar spectroscopy',
+      home_simple_desc: 'A minimalist desktop application for the study of stellar atmospheres.',
+      home_contact: 'Contact',
+      home_email_label: 'Email:',
+      home_footer: '2026 · I watched C-beams glitter in the dark near the Tannhauser Gate ;)',
       page_title: 'SIMPLE · Stellar spectra analysis',
       logo_alt: 'SIMPLE logo',
       main_title: 'SIMPLE · Stellar Spectra Analysis',
@@ -22,7 +30,6 @@
       toc_download: 'Download',
       toc_install: 'Installation',
       footer_text: '2026 · SIMPLE · Stellar spectra analysis · <a href="index.html">rubenmegido</a>',
-      download_win_label: 'Download Windows file (simple.exe):',
       sha_title: 'SHA256 verification (optional)',
       sha_text_1: 'You can verify the integrity of <code>simple.exe</code> in PowerShell with: <code>Get-FileHash .\\SIMPLE.exe -Algorithm SHA256</code>',
       sha_text_2: 'Compare the result with: <code>907FD329F7FA31153A1C3F2CC68E6A29204595333679F565703C6D087C44EAB5</code>',
@@ -86,7 +93,12 @@
     savedTheme = localStorage.getItem(themeKey) || '';
   } catch (_) {}
 
-  applyLang('es');
+  let savedLang = '';
+  try {
+    savedLang = localStorage.getItem(langKey) || '';
+  } catch (_) {}
+
+  applyLang(savedLang === 'en' ? 'en' : 'es');
   applyTheme(savedTheme === 'dark' ? 'dark' : 'light');
 
   if (themeBtn) {
@@ -103,6 +115,9 @@
     langBtn.addEventListener('click', function () {
       const nextLang = lang === 'es' ? 'en' : 'es';
       applyLang(nextLang);
+      try {
+        localStorage.setItem(langKey, nextLang);
+      } catch (_) {}
     });
   }
 })();
