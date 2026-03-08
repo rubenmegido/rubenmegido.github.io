@@ -176,6 +176,30 @@ body:has(.layout) {
 
 .doc-header {
   margin-bottom: 0.5rem;
+  display: block;
+}
+
+.download-logo {
+  max-width: 148px;
+  margin-bottom: 0;
+}
+
+.download-logo-link {
+  display: inline-block;
+}
+
+.download-row {
+  display: grid;
+  grid-template-columns: 148px minmax(0, 1fr);
+  gap: 14px;
+  align-items: center;
+}
+
+.download-copy {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.45rem;
 }
 
 .toc-controls {
@@ -187,9 +211,10 @@ body:has(.layout) {
 }
 
 .content h1 {
-  font-size: 2.1rem;
+  font-size: 1.55rem;
   margin: 0 0 0.2em;
   letter-spacing: 0.4px;
+  line-height: 1.12;
 }
 
 .content .subtitle {
@@ -332,7 +357,7 @@ body:has(.layout) footer {
   }
 
   .doc-header {
-    align-items: center;
+    align-items: start;
   }
 
   .toc-controls {
@@ -356,8 +381,17 @@ body:has(.layout) footer {
     margin-bottom: 0.8rem;
   }
 
+  .download-logo {
+    max-width: 132px;
+  }
+
+  .download-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
   .content h1 {
-    font-size: 1.72rem;
+    font-size: 1.32rem;
     line-height: 1.2;
   }
 
