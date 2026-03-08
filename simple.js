@@ -22,7 +22,7 @@
       logo_alt: 'SIMPLE logo',
       main_title: 'SIMPLE · Stellar Spectra Analysis',
       main_subtitle: 'A minimalist application for the study of stellar atmospheres.',
-      sec_download: 'Download',
+      sec_download: 'Download (version 1.0-beta1)',
       sec_install: 'Installation',
       toc_title: 'Index',
       toc_aria_label: 'Help index',
