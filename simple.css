@@ -84,6 +84,12 @@ footer {
   width: 100%;
 }
 
+.page-controls {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
 .container h1 {
   font-size: 2.2rem;
   margin-bottom: 0.2em;
