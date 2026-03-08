@@ -84,12 +84,6 @@ footer {
   width: 100%;
 }
 
-.page-controls {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 1rem;
-}
-
 .container h1 {
   font-size: 2.2rem;
   margin-bottom: 0.2em;
@@ -190,22 +184,20 @@ body:has(.layout) {
   margin-bottom: 0;
 }
 
-.download-logo-link {
-  display: inline-block;
-}
-
-.download-row {
-  display: grid;
-  grid-template-columns: 148px minmax(0, 1fr);
-  gap: 14px;
-  align-items: center;
-}
-
-.download-copy {
+.download-card {
   display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0.45rem;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 78px;
+  padding: 0 0 0 16px;
+  transition: border-color 120ms ease, transform 120ms ease, background 120ms ease;
+}
+
+.download-card:hover {
+  border-color: color-mix(in srgb, var(--accent) 12%, var(--line));
+  background: color-mix(in srgb, var(--panel) 99%, var(--bg));
+  text-decoration: none;
+  transform: none;
 }
 
 .toc-controls {
@@ -214,6 +206,10 @@ body:has(.layout) {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
+}
+
+.container .toc-controls {
+  justify-content: flex-end;
 }
 
 .content h1 {
@@ -391,9 +387,9 @@ body:has(.layout) footer {
     max-width: 132px;
   }
 
-  .download-row {
-    grid-template-columns: 1fr;
-    gap: 10px;
+  .download-card {
+    min-height: 70px;
+    padding: 0 0 0 12px;
   }
 
   .content h1 {

@@ -29,7 +29,7 @@
       toc_home: 'Home',
       toc_download: 'Download',
       toc_install: 'Installation',
-      footer_text: '2026 · SIMPLE · Stellar spectra analysis · <a href="index.html">rubenmegido</a>',
+      footer_text: '2026 · SIMPLE · Stellar spectra analysis',
       sha_title: 'SHA256 verification (optional)',
       sha_text_1: 'You can verify the integrity of <code>simple.exe</code> in PowerShell with: <code>Get-FileHash .\\SIMPLE.exe -Algorithm SHA256</code>',
       sha_text_2: 'Compare the result with: <code>907FD329F7FA31153A1C3F2CC68E6A29204595333679F565703C6D087C44EAB5</code>',
@@ -49,6 +49,21 @@
   });
 
   let lang = document.documentElement.lang === 'en' ? 'en' : 'es';
+
+  const updateInternalLangLinks = () => {
+    document.querySelectorAll('[data-lang-link]').forEach((el) => {
+      const rawHref = el.getAttribute('href');
+      if (!rawHref) {
+        return;
+      }
+      const url = new URL(rawHref, window.location.href);
+      if (url.origin !== window.location.origin) {
+        return;
+      }
+      url.searchParams.set('lang', lang);
+      el.setAttribute('href', url.pathname + url.search + url.hash);
+    });
+  };
 
   const applyTheme = (mode) => {
     const isDark = mode === 'dark';
@@ -85,6 +100,7 @@
     if (langBtn) {
       langBtn.textContent = lang === 'es' ? 'EN' : 'ES';
     }
+    updateInternalLangLinks();
     applyTheme(document.body.classList.contains('dark') ? 'dark' : 'light');
   };
 
@@ -98,7 +114,15 @@
     savedLang = localStorage.getItem(langKey) || '';
   } catch (_) {}
 
-  applyLang(savedLang === 'en' ? 'en' : 'es');
+  const queryLang = new URLSearchParams(window.location.search).get('lang');
+  const initialLang = queryLang === 'en' || queryLang === 'es'
+    ? queryLang
+    : (savedLang === 'en' ? 'en' : 'es');
+
+  applyLang(initialLang);
+  try {
+    localStorage.setItem(langKey, initialLang);
+  } catch (_) {}
   applyTheme(savedTheme === 'dark' ? 'dark' : 'light');
 
   if (themeBtn) {
