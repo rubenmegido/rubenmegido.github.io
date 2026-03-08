@@ -209,7 +209,9 @@ body:has(.layout) {
 }
 
 .container .toc-controls {
+  width: 100%;
   justify-content: flex-end;
+  margin-left: auto;
 }
 
 .content h1 {
