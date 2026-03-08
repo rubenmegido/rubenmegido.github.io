@@ -1,2 +1,2 @@
-# rubenmegido.github.io
-Personal website and projects
+### rubenmegido
+Contacto: rubenmegido@gmail.com

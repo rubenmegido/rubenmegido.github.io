@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title data-i18n="page_title">SIMPLE · Análisis de espectros estelares</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="simple.css">
+</head>
+<body>
+  <a id="top"></a>
+  <div id="simple_release_meta" style="display:none;">
+    <div id="SIMPLE_LATEST_VERSION">1.0-beta1</div>        
+  </div>
+  <div class="layout">
+    <main class="content">
+      <div class="doc-header">
+        <img src="simple_logo.png" alt="Logo de SIMPLE" class="logo" data-i18n-attr="alt" data-i18n="logo_alt">
+      </div>
+      <h1 data-i18n="main_title">SIMPLE · Análisis de espectros estelares</h1>
+      <div class="subtitle" data-i18n="main_subtitle">Una aplicación minimalista para el estudio de atmósferas estelares.</div>
+
+      <section id="descarga">
+        <h2 data-i18n="sec_download">Descarga</h2>
+        <div class="box">
+          <strong data-i18n="download_win_label">Windows (.exe):</strong><br>
+          <a href="https://rubenmegido.github.io/download/SIMPLE.exe" data-i18n="download_exe_link">Descargar SIMPLE.exe</a><br>
+          
+        </div>
+        <h3 data-i18n="sha_title">Verificación SHA256 (opcional)</h3>
+        <div class="box">
+          <p class="tight-paragraph" data-i18n="sha_text_1">Puedes comprobar la integridad de <code>SIMPLE.exe</code>,  en PowerShell con :<code>Get-FileHash .\SIMPLE.exe -Algorithm SHA256</code></p>
+          <p class="tight-paragraph" data-i18n="sha_text_2">Compara el resultado con: <code>907FD329F7FA31153A1C3F2CC68E6A29204595333679F565703C6D087C44EAB5 </code> </p>
+        </div>
+      </section>
+
+      <section id="instalacion">
+        <h2 data-i18n="sec_install">Instalación Rápida</h2>
+        <ol>
+          <li data-i18n="install_step_1">Descarga el ejecutable <code>SIMPLE.exe</code>.</li>
+          <li data-i18n="install_step_2">Crea una carpeta llamada SIMPLE, cópialo en ella y ejecuta el archivo.</li>
+          <li data-i18n="install_step_3">Si SmartScreen de Windows da un aviso, pulsa <code>Más información</code> y luego <code>Ejecutar de todas formas</code>.</li>
+          <li data-i18n="install_step_4">Abre un FITS local o web y empieza a trabajar.</li>
+        </ol>
+      </section>
+
+    </main>
+
+    <div class="right-col">
+      <div class="toc-controls">
+        <button id="lang-toggle" class="lang-toggle" type="button">EN</button>
+        <button id="theme-toggle" class="theme-toggle" type="button">Modo oscuro</button>
+      </div>
+      <aside class="toc" aria-label="Índice de ayuda" data-i18n-attr="aria-label" data-i18n="toc_aria_label" data-i18n-attr-only="true">
+        <h3 data-i18n="toc_title">Índice</h3>
+        <a href="#top" data-i18n="toc_home">Inicio</a>
+        <a href="#descarga" data-i18n="toc_download">Descarga</a>
+        <a href="#instalacion" data-i18n="toc_install">Instalación</a>
+      </aside>
+    </div>
+  </div>
+
+  <footer data-i18n="footer_text">
+    2026 · SIMPLE · Análisis de espectros estelares · <a href="index.html">rubenmegido</a>
+  </footer>
+  <script src="simple.js"></script>
+</body>
+</html>
