@@ -1,2 +1,2 @@
 ### rubenmegido
-Contacto: 
+Contacto: simplespectra@duck.com
