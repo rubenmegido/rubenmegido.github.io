@@ -227,10 +227,9 @@ body:has(.layout) {
 
 .hero-image {
   display: block;
-  width: 100%;
-  max-width: 720px;
+  width: min(100%, 560px);
   height: auto;
-  margin: 0 0 1.75rem;
+  margin: 0 auto 1.75rem;
   border: 1px solid var(--line);
   background: var(--panel);
 }
