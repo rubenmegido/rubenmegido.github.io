@@ -225,13 +225,20 @@ body:has(.layout) {
   margin-bottom: 1.6rem;
 }
 
+.hero-image-wrap {
+  width: 100%;
+  margin: 0 0 1.75rem;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
 .hero-image {
   display: block;
-  width: 100%;
+  width: calc(100% + 2px);
+  max-width: none;
   height: auto;
-  margin: 0 0 1.75rem;
-  border: 1px solid var(--line);
-  background: var(--panel);
+  margin: -1px 0 -1px -1px;
+  border-radius: 10px;
 }
 
 .content h2 {
