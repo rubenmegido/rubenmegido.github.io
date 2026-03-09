@@ -26,6 +26,7 @@
       sec_download: 'Download (version 1.0-beta1)',
       sec_install: 'Installation',
       sec_contact: 'Contact',
+      download_tooltip: 'Download during April 2026',
       toc_title: 'Index',
       toc_aria_label: 'Help index',
       toc_home: 'Home',
