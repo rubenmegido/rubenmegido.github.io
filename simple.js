@@ -47,11 +47,19 @@
     }
   };
   const sourceTranslations = {};
+  const sourceAttrTranslations = {};
 
   translatableNodes.forEach((el) => {
     const key = el.getAttribute('data-i18n');
     if (key && !(key in sourceTranslations)) {
       sourceTranslations[key] = el.innerHTML;
+    }
+    const attrName = el.getAttribute('data-i18n-attr');
+    if (key && attrName) {
+      const attrKey = key + '::' + attrName;
+      if (!(attrKey in sourceAttrTranslations)) {
+        sourceAttrTranslations[attrKey] = el.getAttribute(attrName) || '';
+      }
     }
   });
 
@@ -96,9 +104,10 @@
       }
       const attrName = el.getAttribute('data-i18n-attr');
       if (attrName) {
+        const attrKey = key + '::' + attrName;
         const attrText = lang === 'en'
-          ? (i18n.en[key] || sourceTranslations[key] || '')
-          : (sourceTranslations[key] || '');
+          ? (i18n.en[key] || sourceAttrTranslations[attrKey] || sourceTranslations[key] || '')
+          : (sourceAttrTranslations[attrKey] || sourceTranslations[key] || '');
         if (attrText) {
           el.setAttribute(attrName, attrText.replace(/<[^>]*>/g, ''));
         }
