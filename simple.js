@@ -130,16 +130,19 @@
     savedLang = localStorage.getItem(langKey) || '';
   } catch (_) {}
 
+  const browserLang = (navigator.language || '').toLowerCase();
+  const defaultLang = browserLang.startsWith('es') ? 'es' : 'en';
+  const defaultTheme = window.matchMedia('(max-width: 980px)').matches ? 'dark' : 'light';
   const queryLang = new URLSearchParams(window.location.search).get('lang');
   const initialLang = queryLang === 'en' || queryLang === 'es'
     ? queryLang
-    : (savedLang === 'en' ? 'en' : 'es');
+    : (savedLang === 'en' || savedLang === 'es' ? savedLang : defaultLang);
 
   applyLang(initialLang);
   try {
     localStorage.setItem(langKey, initialLang);
   } catch (_) {}
-  applyTheme(savedTheme === 'dark' ? 'dark' : 'light');
+  applyTheme(savedTheme === 'dark' || savedTheme === 'light' ? savedTheme : defaultTheme);
 
   if (themeBtn) {
     themeBtn.addEventListener('click', function () {
