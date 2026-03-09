@@ -225,6 +225,16 @@ body:has(.layout) {
   margin-bottom: 1.6rem;
 }
 
+.hero-image {
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  margin: 0 0 1.75rem;
+  border: 1px solid var(--line);
+  background: var(--panel);
+}
+
 .content h2 {
   margin-top: 2.2rem;
   margin-bottom: 0.15rem;
