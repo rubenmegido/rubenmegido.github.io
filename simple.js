@@ -34,7 +34,7 @@
       toc_install: 'Installation',
       toc_contact: 'Contact',
       footer_text: '2026 · SIMPLE · Stellar spectra analysis',
-      news_release_march: 'Simple will be released during March 2026 in its 1.0-beta1 version. It is an application under continuous development until the release of the final 1.0 version.',
+      news_release_march: 'Simple will be released during April 2026 in its 1.0-beta1 version. It is an application under continuous development until the release of the final 1.0 version.',
       sha_title: 'SHA256 verification (optional)',
       sha_text_1: 'You can verify the integrity of <code>simple.exe</code> in PowerShell with: <code>Get-FileHash .\\SIMPLE.exe -Algorithm SHA256</code>',
       sha_text_2: 'Compare the result with: <code>907FD329F7FA31153A1C3F2CC68E6A29204595333679F565703C6D087C44EAB5</code>',
