@@ -187,11 +187,12 @@ body:has(.layout) {
 .download-options {
   display: grid;
   gap: 0.05rem;
+  position: relative;
 }
 
 .download-unavailable {
-  position: relative;
-  display: inline-block;
+  position: static;
+  display: inline;
   cursor: pointer;
   color: var(--accent);
 }
@@ -199,8 +200,8 @@ body:has(.layout) {
 .download-unavailable::after {
   content: attr(data-tooltip);
   position: absolute;
-  right: 0;
-  bottom: calc(100% + 6px);
+  right: 14px;
+  top: -14px;
   padding: 0.42rem 0.65rem;
   border-radius: 6px;
   border: 1px solid var(--line);
@@ -209,7 +210,7 @@ body:has(.layout) {
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.16);
   opacity: 0;
   pointer-events: none;
-  transform: translateY(4px);
+  transform: translateY(-4px);
   transition: opacity 120ms ease, transform 120ms ease;
   white-space: nowrap;
   z-index: 10;
