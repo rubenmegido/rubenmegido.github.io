@@ -267,7 +267,8 @@ body:has(.layout) {
 }
 
 .indented-content {
-  padding-left: 1.1rem;
+  margin-left: 1.1rem;
+  padding-left: 0.2rem;
 }
 
 .download-link-gap {
