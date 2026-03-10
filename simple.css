@@ -189,6 +189,37 @@ body:has(.layout) {
   gap: 0.05rem;
 }
 
+.download-unavailable {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  color: var(--accent);
+}
+
+.download-unavailable::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 6px);
+  padding: 0.42rem 0.65rem;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--text);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.16);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(4px);
+  transition: opacity 120ms ease, transform 120ms ease;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.download-unavailable:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .download-option-title {
   margin-bottom: 0.1rem;
 }

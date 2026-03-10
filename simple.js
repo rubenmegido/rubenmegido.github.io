@@ -27,7 +27,7 @@
       sec_quick_guide: 'Quick Start Guide',
       sec_docs: 'Documentation',
       sec_contact: 'Contact',
-      download_tooltip: 'Download during April 2026',
+      download_tooltip: 'Download during March 2026',
       download_exe_heading: 'For updating an existing installation',
       download_exe_text: 'Keep your saved profiles and settings. Replace only <code>simple.exe</code> in your current <code>SIMPLE</code> folder.',
       download_zip_title: 'simple.zip',
