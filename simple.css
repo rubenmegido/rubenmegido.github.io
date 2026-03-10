@@ -181,54 +181,21 @@ body:has(.layout) {
 
 .download-logo {
   max-width: 148px;
-  margin-bottom: 0;
+  margin: 0 0 0.2rem;
 }
 
-.download-card {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  min-height: 78px;
-  padding: 0 0 0 16px;
-  transition: border-color 120ms ease, transform 120ms ease, background 120ms ease;
+.download-options {
+  display: grid;
+  gap: 0.05rem;
 }
 
-.download-card:hover {
-  border-color: color-mix(in srgb, var(--accent) 12%, var(--line));
-  background: color-mix(in srgb, var(--panel) 99%, var(--bg));
-  text-decoration: none;
-  transform: none;
+.download-option-title {
+  margin-bottom: 0.1rem;
 }
 
-.download-card-disabled {
-  position: relative;
-  cursor: pointer;
-}
-
-.download-card-disabled::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  right: 12px;
-  bottom: calc(100% - 4px);
-  max-width: calc(100% - 24px);
-  padding: 0.42rem 0.65rem;
-  border-radius: 6px;
-  border: 1px solid var(--line);
-  background: var(--panel);
-  color: var(--text);
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.16);
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(4px);
-  transition: opacity 120ms ease, transform 120ms ease;
-  white-space: normal;
-  z-index: 10;
-  text-align: right;
-}
-
-.download-card-disabled:hover::after {
-  opacity: 1;
-  transform: translateY(0);
+.download-option-detail {
+  margin-top: 0;
+  padding-left: 1.1rem;
 }
 
 .toc-controls {
@@ -297,6 +264,18 @@ body:has(.layout) {
 
 .tight-paragraph {
   margin: 0.35rem 0;
+}
+
+.download-link-gap {
+  padding-top: 0.5rem;
+}
+
+.download-observation-gap {
+  padding-top: 0.65rem;
+}
+
+.download-options > p:has(a[download]) {
+  margin-bottom: 0;
 }
 
 ul {
@@ -434,11 +413,6 @@ body:has(.layout) footer {
 
   .download-logo {
     max-width: 132px;
-  }
-
-  .download-card {
-    min-height: 70px;
-    padding: 0 0 0 12px;
   }
 
   .content h1 {
