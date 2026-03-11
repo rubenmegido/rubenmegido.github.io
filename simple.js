@@ -26,6 +26,8 @@
       sec_download: 'Download (version 1.0-beta1)',
       sec_quick_guide: 'Quick Start Guide',
       sec_docs: 'Documentation',
+      quick_guide_pending: 'Pending publication',
+      docs_pending: 'Pending publication',
       sec_contact: 'Contact',
       download_tooltip: 'Download during March 2026',
       download_exe_heading: 'For updating an existing installation',
