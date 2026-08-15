@@ -4,6 +4,7 @@
   --heading: #293942;
   --accent: #2878a5;
   --accent-line: #b8d4e3;
+  --accent-bg: #e7f1f7;
   --muted: #64748b;
   --line: #d8e1e8;
   --panel: #ffffff;
@@ -334,17 +335,29 @@ code {
 
 .toc a {
   display: block;
-  padding: 0.2rem 0 0.2rem 8px;
-  border-left: 2px solid transparent;
-  margin-left: -9px;
+  padding: 0.32rem 0.65rem;
+  border: 1px solid transparent;
+  border-left: 3px solid transparent;
+  border-radius: 6px;
+  margin-left: -13px;
   color: var(--text);
   font-size: 0.97rem;
+  transition: background-color 140ms ease, border-color 140ms ease, color 140ms ease, box-shadow 140ms ease;
 }
 
-.toc a:hover {
+.toc a:hover,
+.toc a:focus-visible {
+  background: var(--accent-bg);
   color: var(--accent);
+  border-color: var(--accent-line);
   border-left-color: var(--accent);
+  box-shadow: 0 2px 8px rgba(40, 120, 165, 0.1);
   text-decoration: none;
+}
+
+.toc a:focus-visible {
+  outline: 2px solid var(--accent-line);
+  outline-offset: 2px;
 }
 
 .badge {
@@ -398,8 +411,8 @@ body:has(.layout) footer {
 
   .toc a {
     margin-left: 0;
-    padding-left: 0;
-    border-left: 0;
+    padding: 0.35rem 0.55rem;
+    border-left: 3px solid transparent;
   }
 
   .right-col {
@@ -465,7 +478,7 @@ body:has(.layout) footer {
   }
 
   .toc a {
-    padding: 0.45rem 0;
+    padding: 0.45rem 0.55rem;
     font-size: 1rem;
   }
 
