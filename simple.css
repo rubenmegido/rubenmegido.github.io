@@ -2,6 +2,7 @@
   --bg: #f5f6f6;
   --text: #25313c;
   --heading: #293942;
+  --title: #35536a;
   --accent: #0d66c9;
   --accent-line: #9bbfe6;
   --toc-line: #cbd3d9;
@@ -249,6 +250,7 @@ body:has(.layout) {
 .content h1 {
   font-size: 1.55rem;
   font-weight: 600;
+  color: var(--title);
   margin: 0 0 0.2em;
   letter-spacing: 0.4px;
   line-height: 1.12;
