@@ -4,7 +4,8 @@
   --heading: #293942;
   --accent: #2878a5;
   --accent-line: #b8d4e3;
-  --accent-bg: #e7f1f7;
+  --nav-hover-bg: #2f5875;
+  --nav-hover-border: #21425d;
   --muted: #64748b;
   --line: #d8e1e8;
   --panel: #ffffff;
@@ -335,11 +336,12 @@ code {
 
 .toc a {
   display: block;
+  width: fit-content;
+  max-width: 100%;
   padding: 0.32rem 0.65rem;
   border: 1px solid transparent;
-  border-left: 3px solid transparent;
   border-radius: 6px;
-  margin-left: -13px;
+  margin-left: 0;
   color: var(--text);
   font-size: 0.97rem;
   transition: background-color 140ms ease, border-color 140ms ease, color 140ms ease, box-shadow 140ms ease;
@@ -347,11 +349,10 @@ code {
 
 .toc a:hover,
 .toc a:focus-visible {
-  background: var(--accent-bg);
-  color: var(--accent);
-  border-color: var(--accent-line);
-  border-left-color: var(--accent);
-  box-shadow: 0 2px 8px rgba(40, 120, 165, 0.1);
+  background: var(--nav-hover-bg);
+  color: #ffffff;
+  border-color: var(--nav-hover-border);
+  box-shadow: 0 2px 8px rgba(33, 66, 93, 0.18);
   text-decoration: none;
 }
 
@@ -412,7 +413,6 @@ body:has(.layout) footer {
   .toc a {
     margin-left: 0;
     padding: 0.35rem 0.55rem;
-    border-left: 3px solid transparent;
   }
 
   .right-col {
