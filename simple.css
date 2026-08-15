@@ -263,7 +263,6 @@ body:has(.layout) {
   height: auto;
   margin: -1px 0 -1px -1px;
   border-radius: 6px;
-  mix-blend-mode: multiply;
 }
 
 .content h2 {
