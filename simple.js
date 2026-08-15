@@ -35,7 +35,6 @@
       download_zip_text: 'Extract <code>simple.zip</code> into the Documents folder or onto the Desktop. You will see the <code>SIMPLE</code> folder with the <code>simple.exe</code> file. Run it and the application will open.',
       download_note_1: 'If you already use SIMPLE and want to keep your profiles, download <code>simple.exe</code> and replace only that file in the folder where you usually work.',
       download_note_2: 'If this is your first installation, extract <code>simple.zip</code> to <code>Documents\\\\SIMPLE</code> or <code>Downloads\\\\SIMPLE</code> and run <code>simple.exe</code> from that folder.',
-      download_observation: 'In both cases: if Windows SmartScreen shows a warning, click <code>More info</code> and then <code>Run anyway</code>. Once the application is open, load a local or web FITS and start working.',
       toc_title: 'Index',
       toc_aria_label: 'Help index',
       toc_home: 'Home',

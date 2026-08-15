@@ -299,10 +299,6 @@ body:has(.layout) {
   padding-top: 0.5rem;
 }
 
-.download-observation-gap {
-  padding-top: 0.65rem;
-}
-
 .download-options > p:has(a[download]) {
   margin-bottom: 0;
 }
