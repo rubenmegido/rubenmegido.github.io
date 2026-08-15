@@ -249,20 +249,15 @@ body:has(.layout) {
 .hero-image-wrap {
   width: 100%;
   margin: 0 0 1.75rem;
-  overflow: hidden;
-  border-radius: 6px;
-  border: 1px solid var(--line);
   background: transparent;
-  box-shadow: 0 4px 18px rgba(37, 49, 60, 0.06);
 }
 
 .hero-image {
   display: block;
-  width: calc(100% + 2px);
-  max-width: none;
+  width: 100%;
+  max-width: 100%;
   height: auto;
-  margin: -1px 0 -1px -1px;
-  border-radius: 6px;
+  margin: 0;
 }
 
 .content h2 {
