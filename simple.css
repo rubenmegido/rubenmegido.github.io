@@ -448,10 +448,6 @@ body:has(.layout) footer {
 }
 
 @media (max-width: 600px) {
-  :root {
-    --bg: #eef1f2;
-  }
-
   html,
   body {
     max-width: 100%;
