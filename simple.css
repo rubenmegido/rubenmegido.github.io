@@ -448,6 +448,10 @@ body:has(.layout) footer {
 }
 
 @media (max-width: 600px) {
+  :root {
+    --bg: #eef1f2;
+  }
+
   .container {
     margin: 28px auto;
   }
