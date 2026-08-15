@@ -252,7 +252,7 @@ body:has(.layout) {
   overflow: hidden;
   border-radius: 6px;
   border: 1px solid var(--line);
-  background: var(--panel);
+  background: transparent;
   box-shadow: 0 4px 18px rgba(37, 49, 60, 0.06);
 }
 
@@ -263,6 +263,7 @@ body:has(.layout) {
   height: auto;
   margin: -1px 0 -1px -1px;
   border-radius: 6px;
+  mix-blend-mode: multiply;
 }
 
 .content h2 {
