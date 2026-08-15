@@ -1,27 +1,14 @@
 :root {
-  --bg: #fdfaf6;
+  --bg: #ffffff;
   --text: #2a2a2a;
   --accent: #b24a2f;
   --muted: #777;
-  --line: #e6dfd6;
-  --panel: #fffdf9;
-  --code-bg: #f3eee8;
+  --line: #e4e4e4;
+  --panel: #ffffff;
+  --code-bg: #f3f4f6;
   --code-text: #2a2a2a;
-  --badge-bg: #fbf7f1;
+  --badge-bg: #f7f7f7;
   --badge-text: #2a2a2a;
-}
-
-body.dark {
-  --bg: #171714;
-  --text: #ece8e2;
-  --accent: #d88a5b;
-  --muted: #b3aca3;
-  --line: #3a352f;
-  --panel: #211f1c;
-  --code-bg: #4a311f;
-  --code-text: #fff1e2;
-  --badge-bg: #2a2621;
-  --badge-text: #ece8e2;
 }
 
 * {
@@ -375,7 +362,6 @@ body:has(.layout) footer {
   padding: 1.5rem 20px;
 }
 
-.theme-toggle,
 .lang-toggle {
   border: 1px solid var(--line);
   background: var(--panel);
@@ -384,10 +370,6 @@ body:has(.layout) footer {
   padding: 0.35rem 0.7rem;
   font-family: inherit;
   cursor: pointer;
-}
-
-.theme-toggle-wrap {
-  display: none;
 }
 
 .right-col {

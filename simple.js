@@ -1,13 +1,11 @@
 (function () {
-  const themeBtn = document.getElementById('theme-toggle');
   const langBtn = document.getElementById('lang-toggle');
   const translatableNodes = Array.from(document.querySelectorAll('[data-i18n]'));
 
-  if (!themeBtn && !langBtn && translatableNodes.length === 0) {
+  if (!langBtn && translatableNodes.length === 0) {
     return;
   }
 
-  const themeKey = 'simple_docs_theme';
   const langKey = 'simple_docs_lang';
   const i18n = {
     en: {
@@ -88,16 +86,6 @@
     });
   };
 
-  const applyTheme = (mode) => {
-    const isDark = mode === 'dark';
-    document.body.classList.toggle('dark', isDark);
-    if (themeBtn) {
-      themeBtn.textContent = lang === 'en'
-        ? (isDark ? 'Light mode' : 'Dark mode')
-        : (isDark ? 'Modo claro' : 'Modo oscuro');
-    }
-  };
-
   const applyLang = (nextLang) => {
     lang = nextLang === 'en' ? 'en' : 'es';
     document.documentElement.lang = lang;
@@ -125,13 +113,7 @@
       langBtn.textContent = lang === 'es' ? 'EN' : 'ES';
     }
     updateInternalLangLinks();
-    applyTheme(document.body.classList.contains('dark') ? 'dark' : 'light');
   };
-
-  let savedTheme = '';
-  try {
-    savedTheme = localStorage.getItem(themeKey) || '';
-  } catch (_) {}
 
   let savedLang = '';
   try {
@@ -140,7 +122,6 @@
 
   const browserLang = (navigator.language || '').toLowerCase();
   const defaultLang = browserLang.startsWith('es') ? 'es' : 'en';
-  const defaultTheme = window.matchMedia('(max-width: 980px)').matches ? 'dark' : 'light';
   const queryLang = new URLSearchParams(window.location.search).get('lang');
   const initialLang = queryLang === 'en' || queryLang === 'es'
     ? queryLang
@@ -150,17 +131,6 @@
   try {
     localStorage.setItem(langKey, initialLang);
   } catch (_) {}
-  applyTheme(savedTheme === 'dark' || savedTheme === 'light' ? savedTheme : defaultTheme);
-
-  if (themeBtn) {
-    themeBtn.addEventListener('click', function () {
-      const next = document.body.classList.contains('dark') ? 'light' : 'dark';
-      applyTheme(next);
-      try {
-        localStorage.setItem(themeKey, next);
-      } catch (_) {}
-    });
-  }
 
   if (langBtn) {
     langBtn.addEventListener('click', function () {
