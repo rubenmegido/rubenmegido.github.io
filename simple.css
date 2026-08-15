@@ -4,6 +4,7 @@
   --heading: #293942;
   --accent: #0d66c9;
   --accent-line: #9bbfe6;
+  --toc-line: #cbd3d9;
   --accent-soft: #e8f1fb;
   --accent-soft-border: #c8dcf3;
   --nav-hover-bg: #0d66c9;
@@ -331,7 +332,7 @@ code {
   position: sticky;
   top: 20px;
   align-self: start;
-  border-left: 2px solid var(--accent-line);
+  border-left: 1px solid var(--toc-line);
   padding-left: 12px;
 }
 
