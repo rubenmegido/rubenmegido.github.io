@@ -4,10 +4,10 @@
   --accent: #2878a5;
   --muted: #64748b;
   --line: #e2e8f0;
-  --panel: #f8fafc;
+  --panel: #ffffff;
   --code-bg: #f1f5f9;
   --code-text: #25313c;
-  --badge-bg: #f8fafc;
+  --badge-bg: #ffffff;
   --badge-text: #25313c;
 }
 
@@ -272,6 +272,8 @@ body:has(.layout) {
 .box {
   border: 1px solid var(--line);
   background: var(--panel);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(37, 49, 60, 0.035);
   padding: 12px 14px;
   margin: 0.8rem 0 1rem;
   overflow-wrap: anywhere;
