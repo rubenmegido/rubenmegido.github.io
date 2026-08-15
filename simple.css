@@ -452,14 +452,44 @@ body:has(.layout) footer {
     --bg: #eef1f2;
   }
 
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
   .container {
     margin: 28px auto;
   }
 
   .layout {
+    width: 100%;
+    max-width: 100%;
     margin: 20px auto;
     padding: 0 16px;
     gap: 14px;
+  }
+
+  .content,
+  .hero-image-wrap,
+  .hero-image,
+  .box,
+  .download-options {
+    min-width: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .download-options > * {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .download-unavailable::after {
+    left: 0;
+    right: auto;
+    max-width: calc(100vw - 56px);
+    white-space: normal;
   }
 
   .layout .logo {
