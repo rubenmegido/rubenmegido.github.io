@@ -352,7 +352,6 @@ code {
   margin-left: 0;
   color: var(--text);
   font-size: 0.97rem;
-  transition: background-color 140ms ease, border-color 140ms ease, color 140ms ease, box-shadow 140ms ease;
 }
 
 .toc a:hover,
@@ -360,7 +359,6 @@ code {
   background: var(--nav-hover-bg);
   color: #ffffff;
   border-color: var(--nav-hover-border);
-  box-shadow: 0 2px 8px rgba(13, 102, 201, 0.22);
   text-decoration: none;
 }
 
