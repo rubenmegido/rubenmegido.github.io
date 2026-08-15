@@ -9,6 +9,7 @@
   --accent-soft-border: #c8dcf3;
   --nav-hover-bg: #0d66c9;
   --nav-hover-border: #0a4f9d;
+  --logo-orange: #ad5700;
   --muted: #64748b;
   --line: #d8e1e8;
   --panel: #ffffff;
@@ -254,6 +255,7 @@ body:has(.layout) {
 
 .content .subtitle {
   margin-bottom: 1.6rem;
+  color: var(--logo-orange);
 }
 
 .hero-image-wrap {
