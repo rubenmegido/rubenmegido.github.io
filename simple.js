@@ -13,7 +13,7 @@
       home_title: 'ruben megido',
       home_subtitle: 'Physics · Stellar spectroscopy',
       home_simple_desc: 'A minimalist desktop application for the study of stellar atmospheres.',
-      home_publications: 'Publications',
+      home_publications: 'Articles',
       arcturus_title: 'Acquisition and spectral analysis of the Boötes asterism: Arcturus, Nekkar and Seginus',
       arcturus_meta: 'Juan Collada and Ruben Megido · SAA Omega · Spectroscopy · FAAE Spring Asterisms Competition · April 2026',
       home_contact: 'Contact',
